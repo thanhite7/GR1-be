@@ -38,6 +38,6 @@ app.use(express.urlencoded({ extended: true, limit: '100kb' }));
 app.use("/api", router);
 app.use("/auth/google",gg_router)
 app.use("/auth/facebook",fb_router)
-const server = http.createServer(app);
+// const server = http.createServer(app);
 
-export default server;
+export default app;
